@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TSS</string>
+    <string name="title_activity_posts">PostsActivity</string>
+</resources>

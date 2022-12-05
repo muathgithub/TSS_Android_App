@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/xhdpi_background"
+    android:orientation="vertical"
+    tools:context="com.example.muath.tss.PostAdder">
+
+    <EditText
+        android:id="@+id/postTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffffff"
+        android:ems="10"
+        android:hint="Post Title"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textColor="#00CEFF"
+        android:textColorHint="#ffffff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/postContextEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:backgroundTint="#00ffffff"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Post Context"
+        android:inputType="textMultiLine"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff" />
+
+    <Button
+        android:id="@+id/addPictureButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="#808080"
+        android:onClick="addPicture"
+        android:text="Add Picture"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/save_button"
+        android:onClick="saveThePost"
+        android:text="Post"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
+
+</LinearLayout>

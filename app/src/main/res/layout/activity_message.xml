@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/xhdpi_background"
+    tools:context="com.example.muath.tss.MessageActivity">
+
+    <EditText
+        android:id="@+id/messageTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:backgroundTint="#ffffff"
+        android:hint="Message Title"
+        android:textColor="#00CEFF"
+        android:textColorHint="#ffffff"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/messageContextEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6"
+        android:gravity="top"
+        android:ems="10"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#ffffff"
+        android:backgroundTint="#ffffff"
+        android:inputType="textMultiLine"
+        android:hint="Message Context"/>
+
+    <Button
+        android:id="@+id/sendMessageButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:onClick="sendMessage"
+        android:background="@drawable/save_button"
+        android:text="Send"
+        android:layout_marginTop="4dp"
+        tools:ignore="OnClick" />
+</LinearLayout>

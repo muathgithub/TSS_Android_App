@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.muath.tss">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tss_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".PostsActivity"
+            android:label="@string/title_activity_posts"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="http://54.166.240.110:80/parse" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="b8b05a2befb6e579155111ff59114335b9b34fec" />
+
+        <activity android:name=".UserInfo" />
+        <activity android:name=".PostAdder" />
+        <activity android:name=".TablesActivity" />
+        <activity android:name=".HomeworkActivity" />
+        <activity android:name=".HomeworkAdder" />
+        <activity android:name=".MessageActivity"></activity>
+    </application>
+
+</manifest>
